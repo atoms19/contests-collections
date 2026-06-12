@@ -14,7 +14,7 @@ torders.map((curr)=>{
   if(map.has(curr)){
    map.set(curr,map.get(curr)+1)
   }else{
-	 map.set(curr,0);
+	 map.set(curr,1);
   }
 })
 let arr = [...map.keys()].sort((a,b)=>map.get(b)-map.get(a))
