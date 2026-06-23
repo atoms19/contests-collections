@@ -3,8 +3,8 @@ const bookingsRouter = express.Router();
 
 
 
+//too lazy for all this 
 
 
 
-
-
+export default bookingsRouter;
