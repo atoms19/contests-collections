@@ -13,7 +13,7 @@ let signInDto = signUpDto.pick({
 })
 
 
-export type SignupDtoType = z.infer<typeof signUpDto>;
-export type SignInDtoType = z.infer<typeof signInDto>;
+export type SignUpDto= z.infer<typeof signUpDto>;
+export type SignInDto = z.infer<typeof signInDto>;
 
 export {signInDto,signUpDto}

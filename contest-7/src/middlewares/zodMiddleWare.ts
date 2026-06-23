@@ -1,8 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { ZodSchema } from "zod/v3";
 import {z} from "zod"
-
-function zodMiddleware(schema:any) {
+function zodMiddleware(schema:z.ZodType){
 
 return (req: Request, res: Response, next: NextFunction)=>{ 
           let result = schema.safeParse(req.body);

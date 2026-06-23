@@ -1,12 +1,13 @@
 import "dotenv/config"
 import express from "express"
-import {authRouter} from "./routes/"
+import {authRouter, workspaceRouter} from "./routes/"
 
 let app = express();
 
 
 app.use(express.json());
 app.use(authRouter);
+app.use("/workspace",workspaceRouter);
 
 app.get("/",(req,res)=>{
   return res.json({

@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken"
-import {SignInDto, SignupDto} from "../dto/authDto"
+import {SignInDto, SignUpDto} from "../dto/authDto"
+import "dotenv/config"
 
 
 
@@ -12,6 +13,7 @@ export class AuthService{
   }
 
   signIn(dto:SignInDto){
-
+          
   }
+
 }
